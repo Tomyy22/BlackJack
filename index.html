@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>🃏 Blackjack</h1>
+
+        <div id="game-info">
+            <div>
+                <h2>🧍 Tus Cartas</h2>
+                <div id="player-cards"></div>
+                <p>Puntaje: <span id="player-score">0</span></p>
+            </div>
+            <div>
+                <h2>🎲 Cartas del Crupier</h2>
+                <div id="dealer-cards"></div>
+                <p>Puntaje: <span id="dealer-score">?</span></p>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="start-button">Empezar Juego</button>
+            <button id="hit-button" disabled>Pedir Carta</button>
+            <button id="stand-button" disabled>Plantarse</button>
+            <button id="reset-button" style="display:none;">Reiniciar Juego</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
